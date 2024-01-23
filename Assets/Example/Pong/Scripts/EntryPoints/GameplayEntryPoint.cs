@@ -78,10 +78,15 @@ namespace Lukomor.Example.Pong
             container.RegisterSingleton(PongPlayer.Two.ToString(),
                 c => new BlockViewModel(c.Resolve<GameSessionService>()));
 
+            // UI
+            
             container.RegisterSingleton(
                 c => new ScreenGameplayViewModel(c.Resolve<GameSessionService>()));
             container.RegisterSingleton(
-                c => new ScreenPauseViewModel(c.Resolve<GameSessionService>(), c.Resolve<ScenesService>()));
+                c => new ScreenPauseViewModel(
+                    c.Resolve<GameSessionService>(), 
+                    c.Resolve<ScenesService>(),
+                    c.Resolve<UIRootGameplayViewModel>().OpenGameplayScreen));
             container.RegisterSingleton(
                 c => new ScreenGameOverViewModel(c.Resolve<GameSessionService>(),c.Resolve<ScenesService>()));
             container.RegisterSingleton(c => new ScreenRoundOverViewModel(
