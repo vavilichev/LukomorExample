@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3708985, g: 0.3783704, b: 0.35722548, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1365491630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dcbf040c901e409197d1778df3d28b49, type: 3}
+  m_Script: {fileID: 11500000, guid: 9b48078feee2793428b17f9d34caa1e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _uiRootView: {fileID: 6089044950812352229}
@@ -238,7 +238,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87b667d54944e8794ecaa90d365592a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _viewModelTypeFullName: Lukomor.Example.Pong.PongUIMainMenuRootViewModel
+  _viewModelTypeFullName: Lukomor.Example.Pong.UIRootMainMenuViewModel
   _propertyName: OpenedScreen
   _mapper: {fileID: 5140301172057844765}
 --- !u!114 &2758795894931435352
@@ -415,10 +415,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefabMappings:
   - ViewModelTypeFullName: Lukomor.Example.Pong.ScreenMainMenuViewModel
-    PrefabView: {fileID: 7100132614258209848, guid: 955c5054be910a740819ac02f88e6a93,
-      type: 3}
-  _prefabByDefault: {fileID: 7100132614258209848, guid: 955c5054be910a740819ac02f88e6a93,
-    type: 3}
+    PrefabView: {fileID: 7100132614258209848, guid: 662ecbaff992f184593356db2b9f04fe, type: 3}
+  _prefabByDefault: {fileID: 7100132614258209848, guid: 662ecbaff992f184593356db2b9f04fe, type: 3}
 --- !u!223 &5623531163379311138
 Canvas:
   m_ObjectHideFlags: 0

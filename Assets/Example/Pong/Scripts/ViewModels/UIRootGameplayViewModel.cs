@@ -43,7 +43,6 @@ namespace Lukomor.Example.Pong
 
         public void HandlePauseButtonClick()
         {
-            
             if (_gameSessionsService.IsPaused.Value)
             {
                 _gameSessionsService.Unpause();

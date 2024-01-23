@@ -1,5 +1,4 @@
-﻿using System;
-using Lukomor.DI;
+﻿using Lukomor.DI;
 using Lukomor.MVVM;
 using UnityEngine;
 
@@ -8,11 +7,6 @@ namespace Lukomor.Example.Pong
     public class MainMenuEntryPoint : MonoBehaviour
     {
         [SerializeField] private View _uiRootView;
-
-        private void Awake()
-        {
-            Debug.Log("Init main menu entry point");
-        }
 
         public void Process(DIContainer container)
         {

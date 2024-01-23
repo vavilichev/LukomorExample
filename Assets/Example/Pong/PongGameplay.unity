@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3708985, g: 0.3783704, b: 0.35722548, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731749, g: 0.13414757, b: 0.1210787, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -200,7 +200,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 27130545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 143e00d3f8b5072499a81a398d52c5bc, type: 3}
+  m_Script: {fileID: 11500000, guid: bf2980631961e0c45b75bb6947ed7c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnBallCatched:
@@ -383,7 +383,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 188105323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d028a9053b694ae4db5730f925ab5ccc, type: 3}
+  m_Script: {fileID: 11500000, guid: fc4a96938ce597e449003d72df706308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &188105327
@@ -467,12 +467,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 485053436}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 677114f6946708245ba330c31d742ab3, type: 3}
+  m_Script: {fileID: 11500000, guid: b7ca729a4e324c442bea695bad6c6b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 5
-  _smoothing: 1
-  _limitY: 3.5
+  _speed: 7
+  _smoothing: 1.5
+  _limitY: 4
 --- !u!4 &485053438
 Transform:
   m_ObjectHideFlags: 0
@@ -717,7 +717,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 520655372}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 143e00d3f8b5072499a81a398d52c5bc, type: 3}
+  m_Script: {fileID: 11500000, guid: bf2980631961e0c45b75bb6947ed7c76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   OnBallCatched:
@@ -900,7 +900,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 941920242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d028a9053b694ae4db5730f925ab5ccc, type: 3}
+  m_Script: {fileID: 11500000, guid: fc4a96938ce597e449003d72df706308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!212 &941920246
@@ -1101,12 +1101,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1154046632}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 677114f6946708245ba330c31d742ab3, type: 3}
+  m_Script: {fileID: 11500000, guid: b7ca729a4e324c442bea695bad6c6b3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 7
-  _smoothing: 1
-  _limitY: 3.5
+  _smoothing: 1.5
+  _limitY: 4
 --- !u!4 &1154046634
 Transform:
   m_ObjectHideFlags: 0
@@ -1256,7 +1256,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1365491630}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc0b10d1a8c38254a862eb4058f6e002, type: 3}
+  m_Script: {fileID: 11500000, guid: 113d25c1d53042d4b9ca2b5cad716504, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _leftBlock: {fileID: 1154046633}
@@ -1361,35 +1361,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e42fd23546bf484089a642ac8cdd31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _viewModelTypeFullName: Lukomor.Example.Pong.PongUIRootViewModel
+  _viewModelTypeFullName: Lukomor.Example.Pong.UIRootGameplayViewModel
   _propertyName: HandlePauseButtonClick
---- !u!114 &1560878321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5217411633469169176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2551eac20cc13a24d85e8dc6494d3491, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  OnPauseClicked:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1560878320}
-        m_TargetAssemblyTypeName: Lukomor.MVVM.Binders.EmptyMethodBinder, Lukomor
-        m_MethodName: Perform
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &119054057833212951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1676,7 +1649,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87b667d54944e8794ecaa90d365592a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _viewModelTypeFullName: Lukomor.Example.Pong.PongUIRootViewModel
+  _viewModelTypeFullName: Lukomor.Example.Pong.UIRootGameplayViewModel
   _propertyName: OpenedScreen
   _mapper: {fileID: 8951043654396899757}
 --- !u!224 &2994656418552579964
@@ -1815,7 +1788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4001132611100013130}
   - component: {fileID: 8065621984938099541}
-  - component: {fileID: 1560878321}
+  - component: {fileID: 8065621984938099542}
   - component: {fileID: 1560878320}
   m_Layer: 5
   m_Name: UIRoot
@@ -1987,6 +1960,33 @@ MonoBehaviour:
   _childBinders:
   - {fileID: 2526438681761188223}
   - {fileID: 1560878320}
+--- !u!114 &8065621984938099542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5217411633469169176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7b590c8ac0c07745a1e98108bd86d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnPauseClicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1560878320}
+        m_TargetAssemblyTypeName: Lukomor.MVVM.Binders.EmptyMethodBinder, Lukomor
+        m_MethodName: Perform
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!223 &8459081324396773266
 Canvas:
   m_ObjectHideFlags: 0
@@ -2040,22 +2040,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _prefabMappings:
   - ViewModelTypeFullName: Lukomor.Example.Pong.ScreenGameplayViewModel
-    PrefabView: {fileID: 3479811450629385304, guid: 45d1bdf7be0f70c4e8140c5b9d6e55dc,
-      type: 3}
-  - ViewModelTypeFullName: Lukomor.Example.Pong.ScreenMainMenuViewModel
-    PrefabView: {fileID: 7100132614258209848, guid: 955c5054be910a740819ac02f88e6a93,
-      type: 3}
+    PrefabView: {fileID: 3479811450629385304, guid: 305aff7d20bd031409444eecea0f90de, type: 3}
   - ViewModelTypeFullName: Lukomor.Example.Pong.ScreenPauseViewModel
-    PrefabView: {fileID: 4538281269218611566, guid: 3f5b5c92a3c59524aaef0001cd964535,
-      type: 3}
+    PrefabView: {fileID: 4538281269218611566, guid: 2a2700808ecb1bf44acdd2fb0548f108, type: 3}
   - ViewModelTypeFullName: Lukomor.Example.Pong.ScreenGameOverViewModel
-    PrefabView: {fileID: 1795455280032357305, guid: b56ccc7373bacff4ea11640767e25325,
-      type: 3}
+    PrefabView: {fileID: 1795455280032357305, guid: 4a982cd964dd889458f0afa8ca7c90aa, type: 3}
   - ViewModelTypeFullName: Lukomor.Example.Pong.ScreenRoundOverViewModel
-    PrefabView: {fileID: 4538281269218611566, guid: 7664a893d0c95b94fb9da7c8451330af,
-      type: 3}
-  _prefabByDefault: {fileID: 7100132614258209848, guid: 955c5054be910a740819ac02f88e6a93,
-    type: 3}
+    PrefabView: {fileID: 4538281269218611566, guid: 1e13c4e7fd70e9144bec7db82cd4cf8f, type: 3}
+  _prefabByDefault: {fileID: 3479811450629385304, guid: 305aff7d20bd031409444eecea0f90de, type: 3}
 --- !u!114 &8958519578582200976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2065,10 +2057,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9095750921785182151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3c724f33287894abaa72efe078fdf0, type: 3}
+  m_Script: {fileID: 11500000, guid: f2ade9361a6b4bc458b9a47f16d43f24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initialSpeed: 5
+  _initialSpeed: 4
   _initialPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &9095750921785182151
 GameObject:
